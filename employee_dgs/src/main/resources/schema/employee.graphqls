@@ -1,0 +1,9 @@
+type Query {
+    Employees: [Employee]
+  }
+
+  type Employee @key(fields: "id") {
+    id: ID!
+    job_title: String
+    employee_name: String
+  }

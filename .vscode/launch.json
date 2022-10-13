@@ -1,0 +1,34 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-EmployeeDgsApplication<employee_dgs>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.mck.dgs.employee_dgs.EmployeeDgsApplication",
+            "projectName": "employee_dgs",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-DepartmentDgsApplication<department_dgs>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.mck.dgs.department_dgs.DepartmentDgsApplication",
+            "projectName": "department_dgs",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-ProjectDgsApplication<project_dgs>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.mck.dgs.project_dgs.project_dgs.ProjectDgsApplication",
+            "projectName": "project_dgs",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}

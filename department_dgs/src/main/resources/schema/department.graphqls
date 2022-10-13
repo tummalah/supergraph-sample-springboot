@@ -1,0 +1,17 @@
+type Query {
+    Departments: [Department]
+  }
+
+  type Department @key(fields: "id") {
+    id: ID!
+    department_name: String 
+    employees: Employee @provides(fields: "id")
+   
+    
+  }
+
+  type Employee @key(fields: "id") @extends {
+      id: ID! @external
+      
+      belongsIn: Department
+  }

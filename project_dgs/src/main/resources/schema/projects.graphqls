@@ -1,0 +1,17 @@
+type Query {
+    Projects: [Project]
+  }
+
+  type Project @key(fields: "id") {
+    id: ID!
+    project_name: String
+    
+   
+    
+  }
+ 
+
+  type Employee @key(fields: "id") @extends{
+      id: ID! @external
+      workingInProject: Project
+  }
